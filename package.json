@@ -1,0 +1,24 @@
+{
+  "name": "an-supplement",
+  "version": "1.0.0",
+  "description": "沉淀的业务组件",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnRan103/supplement.git"
+  },
+  "keywords": [
+    "vue",
+    "calendar",
+    "page"
+  ],
+  "author": "anran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnRan103/supplement/issues"
+  },
+  "homepage": "https://github.com/AnRan103/supplement#readme"
+}
