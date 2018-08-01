@@ -1,4 +1,4 @@
-import calendar from 'components/calendar';
+import calendar from './components/calendar';
 
 export default {
   install(Vue) {
