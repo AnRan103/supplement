@@ -1,6 +1,6 @@
 {
   "name": "an-supplement",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "沉淀的业务组件",
   "main": "src/index.js",
   "scripts": {
