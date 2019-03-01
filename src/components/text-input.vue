@@ -55,7 +55,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../index.less';
+@import '../styles/index.less';
 .we-text-input{
   display: inline-block;
   min-width: 100px;

@@ -196,7 +196,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../index.less';
+@import '../styles/index.less';
 
 .we-select-scroll{
   display: inline-block;

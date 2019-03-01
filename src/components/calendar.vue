@@ -397,6 +397,7 @@
 }
 </style>
 <style lang="less">
+@import '../styles/index.less';
 .we-calendar-popper.el-tooltip__popper.is-light{
   padding: 0;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);
