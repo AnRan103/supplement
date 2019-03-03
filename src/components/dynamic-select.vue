@@ -76,7 +76,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default: '请选择权益',
+      default: '请选择',
     },
   },
   data() {

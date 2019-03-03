@@ -157,8 +157,8 @@
           month: this.month,
         };
         const currentMonth = [
-          `${this.getFormatter({ ...data, date: 1 })} 00:00`,
-          `${this.getFormatter({ ...data, date: new Date(this.year, this.month + 1, 0).getDate() })} 23:59`,
+          `${this.getFormatter({ ...data, date: 1 })}`,
+          `${this.getFormatter({ ...data, date: new Date(this.year, this.month + 1, 0).getDate() })}`,
         ];
         this.$emit('month-change', currentMonth);
       },
@@ -305,7 +305,8 @@
     },
   };
 </script>
-<style lang="less">
+<style lang="less" scoped>
+@import '../styles/index.less';
 .we-calendar{
   width: 100%;
   min-width: 700px;
@@ -395,9 +396,6 @@
     }
   }
 }
-</style>
-<style lang="less">
-@import '../styles/index.less';
 .we-calendar-popper.el-tooltip__popper.is-light{
   padding: 0;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);

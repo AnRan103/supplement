@@ -32,6 +32,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    required: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
@@ -48,7 +52,7 @@ export default {
       });
     },
     handleBlur() {
-      if (this.editValue.replace(/\s+/g, '')) this.$emit('input', this.editValue);
+      if (!this.required || !!this.editValue.replace(/\s+/g, '')) this.$emit('input', this.editValue);
       this.isEdit = false;
     },
   },
