@@ -1,16 +1,16 @@
-import calendar from './components/calendar';
-import dynamicSelect from './components/dynamic-select';
-import textInput from './components/text-input';
+import anCalendar from './components/calendar';
+import anDynamicSelect from './components/dynamic-select';
+import anTextInput from './components/text-input';
 
 module.exports = {
   install(Vue) {
-    Vue.component('an-calendar', calendar);
-    Vue.component('dynamic-select', dynamicSelect);
-    Vue.component('text-input', textInput);
+    Vue.component('an-calendar', anCalendar);
+    Vue.component('an-dynamic-select', anDynamicSelect);
+    Vue.component('an-text-input', anTextInput);
   },
-  calendar,
-  dynamicSelect,
-  textInput,
+  anCalendar,
+  anDynamicSelect,
+  anTextInput,
 };
 
 module.exports.default = module.exports;

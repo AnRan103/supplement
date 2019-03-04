@@ -1,26 +1,25 @@
 # an-supplement
 
-沉淀的几个组件
-1. 安装：
->npm install an-supplement --save
-2. 使用：
->import an-supplement from 'an-supplement';
->Vue.use(an-supplement);
+基于element-ui开发的组件库
+#### 安装：
 
-### 1.an-calendar
-![calendar](https://note.youdao.com/yws/public/resource/df2728de28e354614e00db582f127ad4/xmlnote/535FA491D5E542B78EF9510C134CC60B/1333)
-* props
-  * value，String，v-model传入的值，格式：2018-4-18
-  * monthRange, Array, 月份可以切换的范围，默认没有限制，例如，[4, 6]表示可以向前切换4个月，向后切换6个月
-  * disabledDate, Function, 判断当前日期是否禁用的函数，默认不禁用，true禁用，false不禁用
-  * tooltip, Boolean, 是否有鼠标移入效果，默认false
-  * data, Object, `{num: {}, info: {}}`，
-    * num,Object，某天的计划数量，`{'20180507': 4}`
-    * info,Object，某天的具体计划数据,`{'20180507': [{},{}]}`
+```
+npm install an-supplement --save
+```
 
-* event
-  * change，选中某个日期时触发
-  * month-change, 月份切换时触发，参数：[本月第一天，本月最后一天]
+#### 使用：
 
-* example
-  * <we-calendar v-model="date" :month-range="[0,1]" @change="dateChange"></we-calendar>
+```
+import anSupplement from 'an-supplement';
+Vue.use(anSupplement);
+```
+
+#### 目前有三个组件：
+1. an-calendar，PC端日历组件
+2. an-dynamic-select，下拉框组件，滑动到下拉框底部时获取下一页数据
+3. an-text-input，文本编辑组件
+
+> 文档请移步wiki
+
+
+
